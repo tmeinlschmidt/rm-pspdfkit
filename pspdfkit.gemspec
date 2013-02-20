@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["tom@meinlschmidt.org"]
   gem.description   = %q{Integrating PSPDFKit into your application}
   gem.summary       = %q{Integrating PSPDFKit into your application}
-  gem.homepage      = "http://tom.meinlschmidt.org"
+  gem.homepage      = "http://github.com/tmeinlschmidt/rm-pspdfkit"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
