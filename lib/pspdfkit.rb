@@ -18,7 +18,7 @@ Motion::Project::App.setup do |app|
   raise "Can't find 'libz' library, you have to install 'libz' library prior to use PSPDFKit." unless libz
 
   app.vendor_project('vendor/PSPDFKit.framework', :static, products: ['PSPDFKit'], headers_dir: 'Headers')
-  app.libs += [libz]
+  app.libs += ["/usr/lib/#{libz}"]
   app.frameworks += %w(MessageUI AssetsLibrary MediaPlayer PSPDFKit)
 end
 
